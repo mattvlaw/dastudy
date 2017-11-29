@@ -1,0 +1,884 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+		<title>JASP</title>		<style>			p {margin-top:1em; margin-bottom:1em;}			body {font-family: sans-serif;}		</style>	</head>
+	<body style="display: block; padding: 0px; margin: 0px; ">
+<div style="display:inline-block"><div style="padding: 0px; text-align: start; margin-bottom: 0px; margin-top: 0px; margin-left: 0px; margin-right: 0px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px 20.399999618530273px; display: block; float: none; "><h1 style="padding: 0px; text-align: start; margin: 14.069999694824219px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 21px; font: normal normal bold 21px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">DA Learning Assessment</h1></div><div style="margin: 7.199999809265137px 20.399999618530273px; padding: 0px; max-width: 840px; min-width: 480px; display: block; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 122, 204); border-top-style: solid; border-top-width: 1px; border-top-color: rgb(205, 205, 205); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: rgb(205, 205, 205); ""><p>Analysis of user learning via post-treatment quiz.</p></div><div style="padding: 0px 12px 12px; text-align: start; margin-bottom: 8.399999618530273px; margin-top: 0px; margin-left: 8.399999618530273px; margin-right: 8.399999618530273px; display: block; float: none; position: relative; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px; display: block; float: none; "><h2 style="padding: 0px; text-align: start; margin: 14.9399995803833px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 18px; font: normal normal bold 18px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">Repeated Measures ANOVA</h2></div><div style="margin: 7.199999809265137px 0px 6px; padding: 0px; max-width: 840px; min-width: 480px; display: block; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 122, 204); border-top-style: solid; border-top-width: 1px; border-top-color: rgb(205, 205, 205); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: rgb(205, 205, 205); ""><p>Analysis of variance in quiz results across treatments for each user.</p></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 1.2000000476837158px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="12" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Within Subjects Effects
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Sum of Squares
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				df
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Mean Square
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				F
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				p
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				Collaboration Mode
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				123.6
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				2
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				61.811
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				6.337
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.003
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				Residual
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				565.7
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				58
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				9.754
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				 
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 4.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="12" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="12" >
+					<em>
+					Note.
+					</em>
+
+				 Type III Sum of Squares
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</div></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 7.199999809265137px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="12" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Between Subjects Effects
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Sum of Squares
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				df
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Mean Square
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				F
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				p
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				Residual
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				565.7
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				58
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				9.754
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				 
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="12" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="12" >
+					<em>
+					Note.
+					</em>
+
+				 Type III Sum of Squares
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</div></div><div style="padding: 0px 7.199999809265137px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 7.199999809265137px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px; display: block; float: none; "><h3 style="padding: 0px; text-align: start; margin: 7.5px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 15px; font: normal normal bold 15px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">Descriptives</h3></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 1.2000000476837158px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="8" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Descriptives
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Collaboration Mode
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Mean
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				SD
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				N
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				Explore
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				8.533
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				4.501
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				Observe
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				5.667
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				3.916
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				Collaborate
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				7.233
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				4.804
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="8" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot></tfoot>
+	</table>
+</div>
+</div></div></div></div></div></div><div style="padding: 0px 12px 12px; text-align: start; margin-bottom: 8.399999618530273px; margin-top: 0px; margin-left: 8.399999618530273px; margin-right: 8.399999618530273px; display: block; float: none; position: relative; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px; display: block; float: none; "><h2 style="padding: 0px; text-align: start; margin: 14.9399995803833px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 18px; font: normal normal bold 18px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">Paired Samples T-Test</h2></div><div style="margin: 7.199999809265137px 0px 6px; padding: 0px; max-width: 840px; min-width: 480px; display: block; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 122, 204); border-top-style: solid; border-top-width: 1px; border-top-color: rgb(205, 205, 205); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: rgb(205, 205, 205); ""><p>Comparison of user quiz results on &nbsp;Explore (T1) and Collaborate (T3). In an unexpected result, users did slightly better on the quiz when exploring on their own than when collaboratively exploring with the computer.</p></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 1.2000000476837158px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Paired Samples T-Test
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 0px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				t
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				df
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				p
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Cohen&#39;s d
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T1Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				-
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T3Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				2.055
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				29
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.025
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.375
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" >
+					<em>
+					Note.
+					</em>
+
+				 Student&#39;s t-test.
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" >
+					<em>
+					Note.
+					</em>
+
+				 All tests, hypothesis is measurement one greater than measurement two.
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</div></div><div style="padding: 0px 7.199999809265137px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 7.199999809265137px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px; display: block; float: none; "><h3 style="padding: 0px; text-align: start; margin: 7.5px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 15px; font: normal normal bold 15px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">Descriptives</h3></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 1.2000000476837158px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="10" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Descriptives
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				N
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Mean
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				SD
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				SE
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T1Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				8.533
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				4.501
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.822
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T3Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				7.233
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				4.804
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.877
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="10" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot></tfoot>
+	</table>
+</div>
+</div></div></div></div></div></div><div style="padding: 0px 12px 12px; text-align: start; margin-bottom: 8.399999618530273px; margin-top: 0px; margin-left: 8.399999618530273px; margin-right: 8.399999618530273px; display: block; float: none; position: relative; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px; display: block; float: none; "><h2 style="padding: 0px; text-align: start; margin: 14.9399995803833px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 18px; font: normal normal bold 18px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">Paired Samples T-Test</h2></div><div style="margin: 7.199999809265137px 0px 6px; padding: 0px; max-width: 840px; min-width: 480px; display: block; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 122, 204); border-top-style: solid; border-top-width: 1px; border-top-color: rgb(205, 205, 205); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: rgb(205, 205, 205); ""><p>Comparison of user quiz results on Collaborate (T3) and Observe (T2). Users did slightly better on the quiz when collaborating with the computer than observing it explore, although the result is not significant.</p></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 1.2000000476837158px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Paired Samples T-Test
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 0px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				t
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				df
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				p
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Cohen&#39;s d
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T3Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				-
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T2Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				1.679
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				29
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.052
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.307
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" >
+					<em>
+					Note.
+					</em>
+
+				 Student&#39;s t-test.
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="14" >
+					<em>
+					Note.
+					</em>
+
+				 All tests, hypothesis is measurement one greater than measurement two.
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</div></div><div style="padding: 0px 7.199999809265137px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 7.199999809265137px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div  style="padding: 0px; margin: 0px; display: block; float: none; "><h3 style="padding: 0px; text-align: start; margin: 7.5px 0px; display: inline-block; float: none; vertical-align: middle; font-size: 15px; font: normal normal bold 15px/normal sans-serif; font-weight: bold; color: rgb(0, 0, 0); ">Descriptives</h3></div><div style="padding: 0px 7.199999809265137px 0px 0px; text-align: start; margin-bottom: 7.199999809265137px; margin-top: 1.2000000476837158px; margin-left: 0px; margin-right: 7.199999809265137px; display: block; float: none; position: static; ">
+<div style="display:inline-block; ">
+<div>
+	<table style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(128, 128, 128); border-style: none; padding: 0px; text-align: start; margin-bottom: 24px; margin-top: 0px; display: table; float: none; color: rgb(0, 0, 0); " >
+		<thead>
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 6px 10px 6px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="10" >
+					<div>
+						<div>
+							<span style="padding: 0px; text-align: left; margin: 0px; display: inline-block; float: none; vertical-align: middle; font-size: 12px; font: normal normal normal 12px/normal sans-serif; font-weight: 400; color: rgb(0, 0, 0); " >
+							Descriptives
+							</span>
+
+							<div></div>
+
+							<div></div>
+						</div>
+					</div>
+				</th>
+			</tr>
+
+			<tr>
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				 
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				N
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				Mean
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				SD
+				</th>
+
+				<th style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 3px 12px; text-align: center; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="2" >
+				SE
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T3Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				7.233
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				4.804
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 0px 1px 12px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.877
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 10.800000190734863px 12px 1px 0px; text-align: left; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				T2Quiz
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				30
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				5.667
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				3.916
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 0px 1px 12px; text-align: right; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " >
+				0.715
+				</td>
+
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none; padding: 1px 12px 1px 0px; text-align: left; margin: 0px 0px 9.600000381469727px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " ></td>
+			</tr>
+
+			<tr>
+				<td style="border-collapse: collapse; border-top-width: 0px; border-bottom-width: 2px; border-left-width: 0px; border-right-width: 0px; border-color: rgb(0, 0, 0); border-style: none none solid; padding: 1px; text-align: right; margin: 0px; display: table-cell; float: none; font-size: 12px; font-weight: 400; font: normal normal normal 12px/normal sans-serif; color: rgb(0, 0, 0); " colspan="10" ></td>
+			</tr>
+		</tbody>
+
+		<tfoot></tfoot>
+	</table>
+</div>
+</div></div></div></div></div></div></div></div></div>	</body>
+</html>
